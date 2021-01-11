@@ -14,14 +14,14 @@ const Div3 = ({title}) => {
       }
 
       return(
-            <div id="div3" className="section-3 flex-col-center-center">
+            <div id="div3" className="section-3 flex-col-center-center animate__animated animate__bounceInRight">
                   <h1>{title}</h1>
                   <div className="coord-p card-style">
                         <p><strong>Prénom :</strong> {coord.firstName}</p>
                         <p><strong>Nom : </strong>{coord.lastName}</p>
-                        <p><strong>Age : </strong>{getAge(new Date(year, month, day))}</p>
-                        <p><strong>Téléphone :</strong> +33 {parseFloat(coord.phone)}</p>
-                        <p><strong>E-Mail : </strong>{coord.email}</p>
+                        <p><strong>Age : </strong>{getAge(new Date(year, month, day))} ans</p>
+                        <p><strong>Téléphone :</strong> <a href="tel:+33622060457">+33 {parseFloat(coord.phone)}</a></p>
+                        <p><strong>E-Mail : </strong><a href="mailto:baldaccimike@gmail.com">{coord.email}</a></p>
                   </div>
             </div>
       )

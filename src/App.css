@@ -4,7 +4,12 @@ li {
       letter-spacing: -1px;
       font-size: 12.5px;
       font-weight: 800;
-      
+}
+
+li:hover {
+      font-size: 13px;
+      animation: pulse; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 0.3s; /* don't forget to set a duration! */
 }
 
 h1 {
@@ -13,6 +18,7 @@ h1 {
       font-family: 'Open Sans', sans-serif;
       margin-top: 0;
       padding-top: 10vh;
+      font-size: 50px;
 }
 
 a {
@@ -22,6 +28,19 @@ a {
 
 nav {
       width: 40%;
+}
+
+form{
+      height: 20vh;
+      padding: 10px;
+}
+
+label {
+      font-size: 21px;
+}
+button{
+      height: 30px;
+      width: 400px;
 }
 
 .container{
@@ -41,45 +60,131 @@ nav {
       background-color: #fff;
 }
 
-.section-1, .section-2, .section-3, .section-default{
+.section-1, .section-2, .section-3, .section-default, .section-form{
       height: 80vh;
 }
 
 .card-style{
-      background-color: #111;
-      color: #eee;
+      color: #111;
       padding: 0px 25px;
-      border-radius: 10px;
-      font-size: 13px;
-      line-height: 20px;
-      transform: scale(1);
-      transition-property: transform;
-      transition-duration: 500ms;
+      font-size: 21px;
+      line-height: 45px;
 }
 
 .motivation-text {
       text-align: justify;
-      overflow: scroll;
-      width: 50%;
+      overflow: auto;
+      padding-right: 35px;
+      width: 60%;
       height: 45vh;
       margin: auto;
+      scrollbar-width: none;  /* Firefox */
 }
 
-.card-style:hover {
-      transform: scale(1.05);
+.motivation-text::-webkit-scrollbar {
+      display: none;
 }
 
 .coord-p{
-      line-height: 10px;
-      background-color: #111;
-      color: #eee;
+      line-height: 12px;
+      color: #111;
       padding: 0px 25px;
-      border-radius: 5px;
 }
 
+.coord-p a:hover{
+      color: #db346c;
+}
+
+.button-container{
+      width: 70%;
+}
+
+.div-button{
+      margin-bottom: 10px;
+      height: 70px;
+      width: 150px;
+      color: #111;
+      padding: 20px;
+
+}
+
+.section-default p{
+      margin-top: -15px;
+}
+
+.section-default a{
+      font-size: 21px;
+      text-align: center;
+}
+
+.section-default a:hover{
+      color: #db346c;
+      animation: pulse; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 0.3s; /* don't forget to set a duration! */
+}
+
+.section-2 h2 {
+      margin-top: 60px;
+      margin-bottom: 0px;
+      font-size: 40px;
+}
+
+.section-2 h3 {
+      margin-top: 0px;
+}
+
+.section-2 h4 {
+      font-size: 13px;
+}
+
+.section-2 p {
+      text-align: justify;
+}
+
+.section-2 img {
+      /*clip-path:ellipse(50% 50%);*/
+      border: #111 solid 2px;
+      border-radius: 50%;
+}
+
+.button-container{
+      margin-top: 20px;
+}
+
+.text-input{
+      height: 30px;
+      width: 150%;
+      border: solid 2px #111;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 15px;
+}
+
+.card{
+      padding: 10px;
+      color: #111;
+      margin: 30px 0px;
+}
+
+.card-img {
+      margin-right: 10px;
+      width: 50px;
+      height: 50px;
+}
+
+.card-text {
+      width: 550px;
+      border-bottom: 2px solid #111;
+      line-height: 25px;
+}
 
 #logo {
       width: 130px;
+}
+
+#logo:hover {
+      animation: pulse; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 0.3s; /* don't forget to set a duration! */
 }
 
 /* --- Classes de Mise en page --- */
@@ -91,10 +196,52 @@ nav {
       align-items: center;
 }
 
+.flex-row-space-around-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+}
+
+.flex-row-center-end {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+}
+
+.flex-row-start-start{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+}
+
+.flex-row-start-end{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+}
+
+.flex-row-space-around-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+}
+
 .flex-col-center-center {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+}
+
+.flex-col-space-between-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
 }
 
@@ -105,17 +252,10 @@ nav {
       align-items: flex-start;
 }
 
-.flex-row-center-end {
+.flex-col-start-center {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-end;
-}
-
-.flex-row-space-around-center {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
 }
 
@@ -134,3 +274,17 @@ nav {
 .yellow {
       background-color: yellow;
 }
+
+.pink{
+      color: #db346c;
+}
+
+.overflow{
+      overflow: auto;
+      scrollbar-width: none;  /* Firefox */
+}
+
+.overflow::-webkit-scrollbar {
+      display: none;
+}
+

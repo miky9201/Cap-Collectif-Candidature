@@ -3,10 +3,10 @@ import React from 'react';
 const Div1 = ({title}) => {
       
       return(
-            <div id="div1" className="section-1">
+            <div id="div1" className="section-1 animate__animated animate__bounceInRight">
                   <h1>{title}</h1>
                   <div className="motivation-text card-style">
-                        <p>Bonjour,</p>
+                        <p>Cher(s) recruteur(s),</p>
 
                         <p>En lisant votre annonce j’ai été frappé par la nature de votre mission. Depuis toujours j’ai l’impression de vivre et d’évoluer dans une démocratie théorique plus que réelle. Nous élisons des personnes qui nous représentent mais ce système, bien qu’il possède des avantages, est très imparfait et nous pouvons l’expérimenter au quotidien et ce depuis des décennies. À travers votre existence et votre activité, vous redonnez du sens à la démocratie en permettant, à votre échelle, de donner du pouvoir directement aux citoyens.</p>
 

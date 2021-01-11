@@ -1,0 +1,54 @@
+{
+      "formation": [
+            {       
+                  "titre":"Développeur d'applications frontend",
+                  "image":"https://www.adventureconseil.com/wp-content/uploads/2019/01/openclassrooms.jpg",     
+                  "ecole":"Openclassrooms",
+                  "date":"Décembre 2019 à maintenant",
+                  "duree":"1 an",
+                  "descriptif":"Durant cette formation j'ai pu réaliser de nombreux projets pratiques permettant de parcourir différents aspects de la profession de développeur frontend. De React et ses composants, en passant par Jquery, le CSS et les animations, la gestion de projets agile, j'ai pu développer des compétences solides"
+            }
+      ],
+      "projets" : [
+            {
+                  "titre":"Space Invaders",
+                  "image":"http://www.mikebaldacci.fr/images/projet6.jpg",
+                  "technos":"Jquery & ES6",
+                  "descriptif":"Projet de création d'un jeu vidéo tour par tour pour mettre en pratique les notions d'algorithmies et les concepts de la programmation en Javascript.",
+                  "lien":"https://miky9201.github.io/jeux-video-space-invaders/"
+            },
+            {
+                  "titre":"Appli Eatou - (en cours)",
+                  "image":"https://www.graphicsprings.com/filestorage/stencils/eae46e87a570a08fd57605972626076c.png?width=500&height=500",
+                  "technos":"React et GoogleMap API",
+                  "descriptif":"L'objectif de ce projet est de développer une application qui permet de voir les restaurants alentour, d'en ajouter, de noter et commenter.",
+                  "lien":"https://github.com/miky9201/projet7"
+            },
+            {
+                  "titre":"Appli Statistiques Rugby - (en reflexion et conception)",
+                  "image":"https://www.flaticon.com/svg/static/icons/svg/3850/3850570.svg",
+                  "technos":"React et un peu de backend",
+                  "descriptif":"L'objectif de ce projet est de permettre aux entraineurs de Rugby de pouvoir noter en temps reel sur un device (smartphone ou tablette) les statistiques simples (nombre de passes, possession, occupation du terrain, nombre de plaquage, etc."
+            }
+      ],
+      "hobbies" : [
+            {
+                  "titre":"Rugby",
+                  "image":"https://www.flaticon.com/svg/static/icons/svg/27/27022.svg",
+                  "descriptif":"Projet de création d'un jeu vidéo tour par tour pour mettre en pratique les notions d'algorithmies et les concepts de la programmation en Javascript."
+            },
+            {
+                  "titre":"Cinéma",
+                  "image":"https://www.flaticon.com/svg/static/icons/svg/633/633832.svg",
+                  "descriptif":"Creuse un peu plus que la moyenne. Au delà du cliché du hobbie 'séries / ciné', je suis un véritable amateur, qui cherche à aller plus loin que le simple divertissement et qui essaye de comprendre la mise en scène et les coulisses d'une scène."
+            },
+            {
+                  "titre":"Cuisine",
+                  "image":"https://www.flaticon.com/svg/static/icons/svg/483/483841.svg",
+                  "descriptif":"L'amour du fait maison. Une passion découverte sur le tard au fur et à mesure de la pratique et de l'entrainement. Un peu comme en développement, on se trompe, on réessaye on change des paramètres et à la fin, on obtient la satisfaction ultime de l'accomplissement."
+            }
+      ]
+}
+      
+
+
